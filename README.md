@@ -10,8 +10,8 @@ General repository for brushing up on coding and automation concepts.
 
 
 ## Projects 
-- ✅ Basic Network Scanner
-- ✅ Password strength analyzer
+- [✅] Basic Network Scanner
+- [✅] Password strength analyzer
 - [ ] Log file parser
 - [ ] API integration examples
 - [ ] Basic ML security tools
