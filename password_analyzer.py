@@ -1,13 +1,21 @@
-#Password Strength Analyzer
+"""
+Password Strength Analyzer
+Analyzes password strength based on length and character types.
+"""
+
+# Standard library imports
+import getpass
+
+#Header
 print("Password Strength Analyzer")
 print("-" * 25)
 
-# Get Password from user
-password = input("Enter a password to analyze: ")
-print(f"Analyzing password: {'*' * len(password)}") # Hide the actual password
+
+# Password Input - hides password input
+password = getpass.getpass("Enter a password to analyze: ")
 
 
-# Check password length
+# Check Password Length
 print("\nPassword Analysis")
 print("=" * 18)
 
@@ -22,7 +30,7 @@ else:
     print("✅ Good length")
 
 
-# Check character types
+# Character checks
 # Uses generator expressions and assigns c to each character in the password
 # C can be anything
 has_uppercase = any(c.isupper() for c in password)
@@ -36,17 +44,7 @@ print(f"Numbers: {'✅' if has_numbers else '❌'}")
 print(f'Symbols: {'✅' if has_symbols else '❌'}')
 
 
-# DEBUG CODE
-# print(f"\nDebug info:")
-# print(f"Length >= 8: {length >= 8}")
-# print(f"Length >= 12: {length >= 12}")
-# print(f"Has uppercase: {has_uppercase}")
-# print(f"Has lowercase: {has_lowercase}")
-# print(f"Has numbers: {has_numbers}")
-# print(f"Has symbols: {has_symbols}")
-
-
-# Calculate an overall strength score
+# Calculate Strength Score
 ## Assigns points for each satisfied condition
 ## Awards an overall score out of 6
 print("\nOverall Strength:")
