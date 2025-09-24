@@ -1,4 +1,4 @@
-# Learning Python
+# Learning
 
 General repository for brushing up on coding and automation concepts. 
 
@@ -19,4 +19,4 @@ General repository for brushing up on coding and automation concepts.
 
 ## Learning Log
 - Started: September 19, 2025
-- Current focus: Refresh Python fundamentals
+- Current focus: Log file parser and building familiarity with AI security tools
